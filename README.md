@@ -1,11 +1,11 @@
 # Agent-Customer-Clasification-Deployment
 This repository consists of files required to deploy a Machine Learning Web App created with Flask on Heroku platform.
-Deployed Model at: https://agentcust-ml-api.herokuapp.com/
-Code, Algorithms used and Accuracy of the model can be found in Agent_Detect_All_Models.ipynb
+
+1. Deployed Model at: https://agentcust-ml-api.herokuapp.com/
+2. Code, Algorithms used and Accuracy of the model can be found in Agent_Detect_All_Models.ipynb
 
 # Web App Applications: 
-This Web App can be used to extract the information like Customer Sentiment, Improve Customer Satisfaction, Customer Feedback/Complaints, how Agents are handling Customer Queries, Improve Agent Performance
-and other data driven actionable insights in Call Centers (Phone Support), Customer Service and other related companies where customers call in for help and call center representatives call out for sales, after sales, marketing, technical support services.
+This Web App can be used to extract the information like Customer Sentiment, Improve Customer Satisfaction, Customer Feedback/Complaints, how Agents are handling Customer Queries, Improve Agent Performance and other data driven actionable insights in Call Centers (Phone Support), Customer Service and other related companies where customers call in for help and call center representatives call out for sales, after sales, marketing, technical support services.
 # Agent-Customer-IVR Conversation Examples:
 1. Customer Uttetance: Don’t tell me what to do. Just tell me how you’re going to help me with my billing question?
 2. Agent Utterance: It's a good day today at Bank of Wealth, my name is Heather, How can I help you?
