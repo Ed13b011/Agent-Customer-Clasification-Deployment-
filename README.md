@@ -1,4 +1,5 @@
 # Agent-Customer-Clasification-Deployment
+This repository consists of files required to deploy a Machine Learning Web App created with Flask on Heroku platform.
 
 # Web App Applications: 
 This Web App can be used to extract the information like Customer Sentiment, Improve Customer Satisfaction, Customer Feedback/Complaints, how Agents are handling Customer Queries, Improve Agent Performance
