@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Agent Customer Classification in a Phone Support Conversation</title>
+		<link rel="shortcut icon" href="{{ url_for('static', filename='agentcust-favicon.ico') }}">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+		<script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+
+		<! Website Title >
+		<div class="container">
+			<h2 class='container-heading'>Agent Customer Classification in a Phone Support Conversation</h2>
+	        <div class='description'>
+				<p>A Machine Learning Web App Built with Flask and Deployed using Heroku.</p>
+			</div>
+		</div>
+
+		<! Results >
+		<div class="results">
+			{% if prediction=="<Agent>" %}
+			    <h2>Prediction: Agent Utterance</h2>
+	
+			{% elif prediction=="<Customer>" %}
+				<h2>Prediction: Customer Utterance</h2>
+			
+			{% else %}
+			    <h2>Prediction: Interactive Voice Response (IVR)</h2>
+			{% endif %}
+		</div>
+		
+
+	</body>
+</html>

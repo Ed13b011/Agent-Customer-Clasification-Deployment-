@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Agent Customer Classification in a Phone Support Conversation</title>
+        <link rel="shortcut icon" href="{{ url_for('static', filename='spam-favicon.ico') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+        <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+
+        <! Website Title >
+		<div class="container">
+			<h2 class='container-heading'>Agent Customer Classification in a Phone Support Conversation</h2>
+	        <div class='description'>
+				<p>A Machine Learning Web App Built with Flask and Deployed using Heroku.</p>
+			</div>
+		</div>
+
+        <! Text Area >
+    	<div class="ml-container">
+    		<form action="{{ url_for('predict') }}" method="POST">
+        		<textarea class='text-box' name="text" rows="15" cols="75" placeholder="Enter Your Text Here..."></textarea><br/>
+        		<input type="submit" class="my-cta-button" value="Predict">
+        	</form>
+    	</div>
+		
+		<div class='description'>
+				<p><h2>Web App Applications:</h2> This Web App can be used to extract the information like Customer Sentiment, Improve Customer Satisfaction, Customer Feedback/Complaints, how Agents are handling Customer Queries, Improve Agent Performance
+				and other data driven actionable insights in Call Centers (Phone Support), Customer Service and other related companies where customers call in for help and call center representatives call out for sales, after sales, marketing, technical support services.</p>
+				<p><h2> Agent Customer Conversation Examples: </h2></p>
+				<ol>
+				    <li>Customer Uttetance: Don’t tell me what to do. Just tell me how you’re going to help me with my billing question?</li>
+					<li>Agent Utterance: It's a good day today at Bank of Wealth, my name is Heather, How can I help you?</li>
+					<li>IVR: We constantly endeavour to provide you with a world class customer service</li>
+				</ol>
+				
+				<h2>Steps for preparing Machine Learning Model:</h2> 
+				
+				<ol>
+				    <li>Collect voice file of phone call conversation between agent and customer</li> 
+				    <li>Split the voice file into small segements(chunks)</li> 
+				    <li>Run speech to text model (STT) on chunks to extract text</li>
+				    <li>Prepare dataset by labelling the text. Labels are Agent, Customer, Interactive Voice Response(an automated telephony system)</li>
+					<li>Train Machine Learning Model on labelled dataset</li>
+					<li>Using this Model collect all Customer utterances for further analysis, Example: Customer Sentiment Analysis</li>
+					<li>Collect all Agent utterances for Agents Performance measurements and for any other analysis </li>
+				</ol>
+        </div>
+
+    </body>
+</html>
